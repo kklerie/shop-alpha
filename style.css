@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 24px;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-grid {
+	display: grid;
+	grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+
+header {
+	background-image: url("images/header_back.jpg");
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	grid-column: 1 / -1;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+}
+
+.logo {
+	height: 100%;
+}
+
+.menu ul {
+	display: flex;
+	list-style: none;
+}
+
+.menu li {
+	padding: 1em 2em;
+}
+
+.menu ul li a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.9s;
+}
+
+.menu ul li a:hover {
+	color: orange;
+	transition: 0.9s;
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.banner h1 {
+	font-size: 72px;
+}
+
+.banner p {
+	font-size: 22px;
+	text-align: center;
+	max-width: 40%;
+	padding: 50px 0;
+}
+
+.button {
+	background: orange;
+	color: #fff;
+	padding: 15px 50px;
+	transition: 0.9s;
+}
+
+.button:hover {
+	background: darkorange;
+	transition: 0.9s;
+}
+
+.clothes {
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 150px;
+	padding-bottom: 200px;
+	flex-direction: column;
+	grid-column: 2 / -2;
+}
+
+.clothes p {
+	font-size: 20px;
+}
+
+.tiles {
+	grid-column: 2 / -2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
+	margin-bottom: 100px;
+}
+
+.item {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.item img {
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	width: 100%;
+	height: 100%;
+}
+
